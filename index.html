@@ -15,17 +15,94 @@
         <img src="images/cch.png" class="header-img animated rollIn">
         <p>Cloyne Court Records</p>
         <div class="header-links">
-            <a href="#news">News</a>
-            <a href="#artists">Artists</a>
-            <a href="#about">About</a>
+            <a href="#new">new</a>
+            <a href="#music">music</a>
+            <a href="#info">info</a>
         </div>
     </header>
     <div class="main">
         <section>
-            <a name="news"></a>
+            <a name="new"></a>
+            <div id="ccrCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#ccrCarousel" data-slide-to="0" class=""></li>
+                    <li data-target="#ccrCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#ccrCarousel" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="images/rhiao-album.jpg" alt="new album">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <a href="http://rhiao.com">
+                                    <h2>new rhiao album</h2>
+                                    <p>breathe happiness</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/beardwail-rhiao.jpg" alt="music video?">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h2>Beardwail & Rhiao</h2>
+                                <h3>All-Else</h3>
+                                <p>noisey, saucey, idiomatic</p>
+                                </p>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#watchModal">
+                                    watch
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="watchModal" tabindex="-1" role="dialog" aria-labelledby="watchModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">close</span>
+                                                </button>
+                                                <h4 class="modal-title" id="watchModalLabel">Beardwail & Rhiao & all else</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <!--
+                                                <iframe width="560" height="315" src="//www.youtube.com/embed/wEbLuJpp7iY" frameborder="0" allowfullscreen></iframe>
+                                                -->
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/beardwail.jpg" alt="Beardwail">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <a href="http://beardwail.com">
+                                    <h1>The Beardwail</h1>
+                                    <p>The Wailbeard</p>
+                                </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#ccrCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#ccrCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </section>
-        <section class="artists">
-            <a name="artists"></a>
+        <section class="music">
+            <a name="music"></a>
             <div class="container">
                 <div class="row">
                     <div class="col-md-1"></div>
@@ -78,20 +155,20 @@
             </div>
             <div class="col-md-2"></div>
         </div>
-        <section class="about">
+        <section class="info">
             <div class="container">
-                <a name="about"><h1 class="text-center">What?</h1></a>
+                <a name="info"><h1 class="text-center">What?</h1></a>
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <p>
-                        <span class="tab"></span>Cloyne Court Records is based on something. That something could be called a thing. History is a thing. Thingk about it. Someday (we will) all [will] be. Hello, welcome, and so forth.
+                        <span class="tab"></span>Cloyne Court Records is based on something. That something could be called a thing. History is a thing.
                     </p>
                 </div>
                 <div class="col-md-2"></div>
             </div>
         </section>
         <hr>
-        <section class="nothing">
+        <section class="nothing-text">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2"></div>

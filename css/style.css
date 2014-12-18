@@ -10,11 +10,12 @@ header {
     width: 100%;
     text-align: center;
     font-size: 24px;
-    /*line-height: 108px;*/
     height: 150px;
     background: black;
     color: white;
+    opacity: 1;
     transition: all 0.4s ease;
+    z-index: 100;
 }
 header.sticky {
     font-size: 24px;
@@ -23,9 +24,9 @@ header.sticky {
     height: 48px;
     background: black;
     color: black;
-    /*padding-left: 20px;*/
-    transition: all 0.4s ease;
+    opacity: 1;
     padding-right: 40px;
+    transition: all 0.4s ease;
 }
 .header-links {
     margin-left: auto;
@@ -48,7 +49,16 @@ header p {
 header.sticky p {
     font-size: 48px;
 }
-.about h1 {
+.main {
+    padding-top: 150px;
+    transition: all 0.4s ease;
+    z-index: 0;
+}
+.main.sticky {
+    padding-top: 48px;
+    transition: all 0.4s ease;
+}
+.info h1 {
     color: black;
 }
 .header-img {
@@ -57,13 +67,10 @@ header.sticky p {
     margin-top: 5px;
     float: left;
 }
-.main {
-    padding-top: 150px;
-}
 span.tab {
     padding: 10px;
 }
-.nothing {
+.nothing-text {
     font-size: 1px;
     background-color: black;
     color: DarkSlateGray;
