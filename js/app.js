@@ -39,7 +39,6 @@ $(function () {
 $(document).ready(function () {
     $('header img').remove();
 });
-
 window.onload = function() {
     $('.carousel').carousel({
         interval: 2000

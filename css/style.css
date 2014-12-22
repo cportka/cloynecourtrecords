@@ -12,7 +12,7 @@ header {
     font-size: 24px;
     height: 150px;
     background: black;
-    color: white;
+    color: red;
     opacity: 1;
     transition: all 0.4s ease;
     z-index: 100;
@@ -74,4 +74,33 @@ span.tab {
     font-size: 1px;
     background-color: black;
     color: DarkSlateGray;
+}
+
+@-webkit-keyframes colorFade {
+  0% {
+      color: red;
+  }
+
+  100% {
+      color: white;
+  }
+}
+
+@keyframes colorFade {
+  0% {
+      color: red;
+  }
+
+  100% {
+      color: white;
+  }
+}
+
+.colorFade {
+  -webkit-animation-name: colorFade;
+          animation-name: colorFade;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
